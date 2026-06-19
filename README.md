@@ -16,7 +16,7 @@ A simple, searchable eBook website built as a course project for **IFT 302 — W
 
 ## 🌐 Live Site
 
-> View the project here: **[https://your-username.github.io/ift302-ebook](https://your-username.github.io/ift302-ebook)**
+> View the project here: **[https://feyintoluwa.github.io/ift302-ebook](https://feyintoluwa.github.io/ift302-ebook)**
 >
 > *(Replace `your-username` with your actual GitHub username after deployment)*
 
