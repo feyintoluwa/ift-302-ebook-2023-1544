@@ -18,16 +18,16 @@
       --border:    #e2e0d8;
       --radius:    12px;
     }
-
+ 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
     body {
       font-family: 'Space Grotesk', sans-serif;
       background: var(--page);
       color: var(--ink);
       min-height: 100vh;
     }
-
+ 
     /* ── NAV ── */
     nav {
       background: var(--accent);
@@ -53,7 +53,7 @@
       font-size: .78rem;
       letter-spacing: .06em;
     }
-
+ 
     /* ── HERO ── */
     .hero {
       background: linear-gradient(135deg, var(--accent) 0%, #0a2540 100%);
@@ -102,7 +102,7 @@
       margin: 0 auto 2.5rem;
       line-height: 1.6;
     }
-
+ 
     /* ── SEARCH ── */
     .search-wrap {
       max-width: 520px;
@@ -134,14 +134,14 @@
       transform: translateY(-50%);
       opacity: .6;
     }
-
+ 
     /* ── MAIN ── */
     main {
       max-width: 900px;
       margin: 0 auto;
       padding: 3.5rem 1.5rem 4rem;
     }
-
+ 
     .section-label {
       font-size: .7rem;
       font-weight: 700;
@@ -159,14 +159,14 @@
       height: 1px;
       background: var(--border);
     }
-
+ 
     /* ── CARDS ── */
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 1.5rem;
     }
-
+ 
     .card {
       background: var(--card-bg);
       border: 1px solid var(--border);
@@ -194,7 +194,7 @@
       transform: translateY(-3px);
     }
     .card:hover::before { transform: scaleX(1); }
-
+ 
     .card-icon {
       width: 48px;
       height: 48px;
@@ -206,7 +206,7 @@
     }
     .card-icon.pdf  { background: #fff1f0; }
     .card-icon.docx { background: #eff6ff; }
-
+ 
     .card-badge {
       display: inline-block;
       font-size: .65rem;
@@ -219,7 +219,7 @@
     }
     .badge-pdf  { background: #fff1f0; color: #dc2626; }
     .badge-docx { background: #eff6ff; color: #2563eb; }
-
+ 
     .card h2 {
       font-size: 1rem;
       font-weight: 600;
@@ -232,7 +232,7 @@
       line-height: 1.5;
       flex: 1;
     }
-
+ 
     .card-meta {
       display: flex;
       align-items: center;
@@ -241,7 +241,7 @@
       color: var(--muted);
     }
     .card-meta span { display: flex; align-items: center; gap: .3rem; }
-
+ 
     .btn-download {
       display: flex;
       align-items: center;
@@ -263,7 +263,7 @@
       background: #0a2540;
       transform: translateY(-1px);
     }
-
+ 
     /* ── NO RESULTS ── */
     .no-results {
       text-align: center;
@@ -272,7 +272,7 @@
       display: none;
     }
     .no-results svg { margin-bottom: .75rem; opacity: .4; }
-
+ 
     /* ── ABOUT ── */
     .about-strip {
       margin-top: 4rem;
@@ -320,7 +320,7 @@
       padding: .5rem 1rem;
       border-radius: 8px;
     }
-
+ 
     /* ── FOOTER ── */
     footer {
       text-align: center;
@@ -330,10 +330,10 @@
       border-top: 1px solid var(--border);
     }
     footer strong { color: var(--ink); }
-
+ 
     /* ── HIDDEN ── */
     .card[data-hidden="true"] { display: none; }
-
+ 
     @media (max-width: 540px) {
       .hero { padding: 3rem 1.25rem 2.5rem; }
       .about-strip { flex-direction: column; gap: 1.25rem; }
@@ -342,13 +342,13 @@
   </style>
 </head>
 <body>
-
+ 
 <!-- NAV -->
 <nav>
   <span class="nav-brand">IFT 302 eLibrary</span>
   <span class="nav-meta">University Academic Portal</span>
 </nav>
-
+ 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-eyebrow">📚 Course Materials</div>
@@ -367,13 +367,13 @@
     />
   </div>
 </section>
-
+ 
 <!-- MAIN -->
 <main>
   <p class="section-label">Available Materials</p>
-
+ 
   <div class="cards" id="cardGrid">
-
+ 
     <!-- CARD 1 — PDF -->
     <article
       class="card"
@@ -396,14 +396,14 @@
           3.2 MB
         </span>
       </div>
-      <a class="btn-download" href="files/REAL_IFT_302_Notes.pdf" download="IFT_302_Lecture_Notes.pdf">
+      <a class="btn-download" href="REAL_IFT_302 _Notes.pdf" download="IFT_302_Lecture_Notes.pdf">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
         </svg>
         Download PDF
       </a>
     </article>
-
+ 
     <!-- CARD 2 — DOCX -->
     <article
       class="card"
@@ -426,22 +426,22 @@
           134 KB
         </span>
       </div>
-      <a class="btn-download" href="files/CSC_322_Lecture_notes.docx" download="CSC_322_Lecture_Notes.docx">
+      <a class="btn-download" href="CSC_322 _Lecture_notes.docx" download="CSC_322_Lecture_Notes.docx">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
         </svg>
         Download DOCX
       </a>
     </article>
-
+ 
   </div>
-
+ 
   <!-- NO RESULTS -->
   <div class="no-results" id="noResults">
     <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
     <p>No materials matched your search.<br>Try different keywords.</p>
   </div>
-
+ 
   <!-- ABOUT STRIP -->
   <div class="about-strip">
     <div class="about-avatar">SI</div>
@@ -452,18 +452,18 @@
     <div class="matric-badge">Matric: 2023/12544</div>
   </div>
 </main>
-
+ 
 <!-- FOOTER -->
 <footer>
   <p>Built by <strong>Showunmi Ibrahim</strong> &nbsp;·&nbsp; Matric No. <strong>2023/12544</strong> &nbsp;·&nbsp; IFT 302 Web Technology Project &nbsp;·&nbsp; 2024</p>
 </footer>
-
+ 
 <script>
   function handleSearch(query) {
     const q = query.toLowerCase().trim();
     const cards = document.querySelectorAll('.card');
     let visible = 0;
-
+ 
     cards.forEach(card => {
       const keywords = (card.dataset.keywords || '').toLowerCase();
       const title = card.querySelector('h2').textContent.toLowerCase();
@@ -472,10 +472,13 @@
       card.setAttribute('data-hidden', !match);
       if (match) visible++;
     });
-
+ 
     document.getElementById('noResults').style.display = visible === 0 ? 'block' : 'none';
   }
 </script>
-
+ 
 </body>
 </html>
+ 
+
+
